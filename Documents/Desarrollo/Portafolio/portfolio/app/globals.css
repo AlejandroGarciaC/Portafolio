@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables base para el tema oscuro */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* --- ESTILOS PERSONALIZADOS --- */
+
+/* 1. Fondo de Grilla Sutil (Estilo Plano Técnico) */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px; /* Tamaño de los cuadros */
+}
+
+/* 2. Clase para texto con gradiente brillante */
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 3. Clase para resaltar palabras en color Cyan/Neon */
+.text-highlight {
+  color: #22d3ee; /* Cyan-400 de Tailwind */
+  font-family: var(--font-mono);
+}
